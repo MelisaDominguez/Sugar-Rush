@@ -24,7 +24,7 @@
 }
 .carousel-image-2{
     background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)),
-    url("img/IMG1722.jpg");
+    url("img/86oemm2sgw501.jpg");
     background-size:cover;
 }
 .carousel-image-3{
@@ -42,7 +42,7 @@
 .btn-color:hover{
     color: white;
 }
-@keyframes slide-btn{
+@keyframes slide-btn {
     16%{
         transform: translateY(8px);
     }

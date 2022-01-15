@@ -1,5 +1,6 @@
-.body{
-    font-family:'Indie Flower', cursive;
+
+.navbar-brand{
+    color:rgb(184, 209, 184);
 }
 .navbar .nav-link{
     font-size:14px;
@@ -10,72 +11,73 @@
 .navbar-toggler{
     outline:none!important;
 }
-.bg-plum{
-    background:plum;
-}
+.bg { 
+    background: rgb(108, 163, 108); 
+} 
 /*===========================================SLIDER=======================================*/
-.carousel-item{
-    height: 600px;
-}
-.carousel-image-1{
-    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)),
-    url("img/IMG1722.jpg");
-    background-size:cover;
-}
-.carousel-image-2{
-    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)),
-    url("img/IMG1722.jpg");
-    background-size:cover;
-}
-.carousel-image-3{
-    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)),
-    url("img/4bd4ce3fedc8a5bdf1358941d975646f.jpg");
-    background-size:cover;
-}
-.title-color{
-    color:purple;
-}
-.btn-color{
-    background:plum;
-    color:purple;
-}
-.btn-color:hover{
-    color: white;
-}
-@keyframes slide-btn{
-    16%{
-        transform: translateY(8px);
-    }
-    33%{
-        transform: translateY(-6px);
-    }
-    50%{
-        transform: translateY(4px);
-    }
-    65%{
-        transform: translateY(-2px);
-    }
-    85%{
-        transform: translateY(1px);
-    }
-    100%{
-        transform: translateY(04);
-    }
-}
-.slide-btn{
-    display:inline-block;
-    vertical-align:middle;
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0,0,0,0)
-}
-.slide-btn:hover,
-.slide-btn:focus,
-.slide-btn:active{
-    animation-name:slide-btn;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-}
+.carousel-item{ 
+    height: 500px; 
+} 
+.carousel-image-1{ 
+    background: linear-gradient(rgba(219, 105, 175, 0.205),rgba(219, 105, 175, 0.205)), 
+    url('https://target.scene7.com/is/image/Target/GUEST_f375ca15-dace-4722-8ce9-a0f68cc283bf?wid=488&hei=488&fmt=pjpeg'); 
+    background-size:cover; 
+    
+} 
+.carousel-image-2{ 
+    background: linear-gradient(rgba(219, 105, 175, 0.205),rgba(219, 105, 175, 0.205)), 
+    url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/high-angle-view-of-variety-of-succulent-plants-royalty-free-image-1584462052.jpg'); 
+    background-size:cover; 
+} 
+.carousel-image-3{ 
+    background: linear-gradient(rgba(219, 105, 175, 0.205),rgba(219, 105, 175, 0.205)), 
+    url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDrLkI9wPr2DxWCtnegWf6Jozy4yhS4g2OeWW6bFc1v6CDsezf_iiSb4E5VWscvmEO1-Q&usqp=CAU'); 
+    background-size:cover; 
+} 
+.title-color{ 
+    color:rgb(255, 255, 255);
+} 
+.btn-color{ 
+    background:rgb(236, 160, 192); 
+    color:rgb(134, 134, 134);
+} 
+.btn-color:hover{ 
+    color: white; 
+} 
+@keyframes slide-btn { 
+    16%{ 
+        transform: translateY(8px); 
+    } 
+    33%{ 
+        transform: translateY(-6px); 
+    } 
+    50%{ 
+        transform: translateY(4px); 
+    } 
+    65%{ 
+        transform: translateY(-2px); 
+    } 
+    85%{ 
+        transform: translateY(1px); 
+    } 
+    100%{ 
+        transform: translateY(04); 
+    } 
+} 
+.slide-btn{ 
+    display:inline-block; 
+    vertical-align: middle; 
+    transform: perspective(1px) translateZ(0); 
+    box-shadow: 0 0 1px rgba(0,0,0,0); 
+} 
+.slide-btn:hover, 
+.slide-btn:focus, 
+.slide-btn:active{ 
+    animation-name: slide-btn; 
+    animation-duration: 2s; 
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count: 1; 
+} 
 /*=========================END SLIDER==========================================*/
 /*============================SERVIC3 SECTION===============================*/
 .service-icon{
@@ -87,67 +89,79 @@
 }
 /*===============================END SERVICE SEXTION=================================*/
 /*==========================PRODUCT SECTION=========================================*/
-#products{
-    background: plum;
+body{ 
+    font-family: 'Klee One', sans-serif; 
+    background:#fff9c0;
+} 
+
+#products{ 
+    background: rgb(179, 240, 255); 
+} 
+.product-title{ 
+    color: rgb(0, 82, 102); 
+    padding-bottom: 50px;
+    font-weight: bolder;
+} 
+.single-item{ 
+    display: inline-block; 
+    vertical-align: middle; 
+    transform: perspective(1px) translate(0); 
+    box-shadow:0 0 1px rgb(179, 240, 255); 
+    position: relative; 
+    transition-duration: 0.3s; 
+    transition-property: transform; 
+    cursor: pointer; 
+} 
+.single-item:before{ 
+    pointer-events: none; 
+    position: absolute; 
+    z-index: -1; 
+    content:""; 
+    top: 100%; 
+    left: 5%; 
+    height: 10px; 
+    width: 90%; 
+    opacity: 0; 
+    background: radial-gradient(ellipse at center, rgba(0, 89, 124, 0.904) 0%, 
+     rgba(247, 244, 244, 0.897) 80%); 
+     transition-duration: 0.3s; 
+     transition-property: transform, opacity; 
+} 
+.single-item:hover, 
+.single-item:focus, 
+.single-item:active{ 
+    transform: translateY(-5px); 
+} 
+.single-item:hover:before, 
+.single-item:focus:before, 
+.single-item:active:before{ 
+    opacity: 1; 
+    transform: translateY(5px); 
+} 
+.img-container{ 
+    position: relative; 
+    overflow: hidden; 
+    cursor: pointer; 
+} 
+.img-container{ 
+    display: inline-block; 
+    vertical-align: middle; 
+    transform: perspective(1px) translateZ(0); 
+    box-shadow: 0 0 1px black; 
+    transition-duration: 0.3s; 
+    transition-property: box-shadow, transform; 
+} 
+.img-container:hover, 
+.product-img:focus, 
+.product-img:active{ 
+    box-shadow: 1px 0px 1px 4px rgba(27, 111, 126, 0.9); 
+    transform: scale (1.1); 
+}  
+
+.product-padding{
+    padding-left: 10px;
 }
-.product-title{
-    color: purple;
-}
-.single-item{
-    display:inline-block;
-    vertical-align: middle;
-    transform: perspective(1px) translate(0);
-    box-shadow: 0 0 1px rgba(247,241,241);
-    position: relative;
-    transition-duration: 0.3;
-    transition-property: transform;
-    cursor: pointer;
-}
-.single-item:before{
-    pointer-events:none;
-    position: absolute;
-    z-index: -1;
-    content:"";
-    top: 100%;
-    left: 5%;
-    height: 10px;
-    width: 90%;
-    opacity:0;
-    background: radial-gradient(ellipse at center, plum 0%,
-    plum 80%);
-    transition-duration: 0.3s;
-    transition-property: transform, opacity;
-}
-.single-item:hover,
-.single-item:focus,
-.single-item:active{
-    transform: translateY(-5px);
-}
-.single-item:hover:before,
-.single-item:focus:before,
-.single-item:active:before{
-    opacity: 1;
-    transform: translateY(5px);
-}
-.image-container{
-    position:relative;
-    overflow: hidden;
-    cursor:pointer;
-}
-.img-container{
-    display:inline-block;
-    vertical-align:middle;
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px plum;
-    transition-duration: 0.3s;
-    transition-property: box-shadow, transform;
-}
-.img-container:hover,
-.product-img:focus,
-.product-img:active{
-    box-shadow:1px 0px 1px 4px plum (0.9);
-    transform: scale (1.1);
-}
+
 /*=======================================END PRODUCT SECTION===========================*/
 /*======================================ABOUT US SECTION===================================*/
 #about-sec{
@@ -261,12 +275,149 @@
 
 /*===================================END CONTACT US============================================*/
 /*=====================================FOOTER SECTION===========================================*/
-.footer{
-    background: plum;
-    color:purple;
-}
-fab{
-    padding-left: 10px;
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
 
+.footer {
+    padding: 40px 0;
+    background-color: rgb(108, 163, 108);
+}
+.footer .social {
+    text-align: center;
+    padding-bottom:25px;
+    color: rgb(37, 78, 44);
+}
+.footer .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 1.5px solid red;
+    width:40px;
+    height:40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align:center;
+    border-radius:50%;
+    margin: 0 8px;
+    opacity:0.75;
+}
+.footer .social a:hover {
+    opacity: 0.9;
+}
+.footer ul{
+    margin-top:0;
+    padding:0;
+    list-style:none;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+    text-align:center;
+}
+.footer ul li a {
+    color:rgb(37, 78, 44);
+    text-decoration:none;
+    opacity: 0.8;
+}
+.footer ul li {
+    display: inline-block;
+    padding:0 15px;
+
+}
+.footer ul li a:hover {
+    opacity:1;
+}
+.footer .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:rgb(37, 78, 44);
+}
+
+
+
+
+
 /*=========================================END FOOTER SECTION============================*/
+
+body {
+    background: #fff9c0;
+    font-family: 'Klee One', sans-serif;
+}
+
+.login-form,
+.login-form * {
+    box-sizing: border-box;
+    font-family: 'Klee One', sans-serif;
+}
+
+.login-form {
+    max-width: 350px;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+.login-form__logo-container {
+    padding: 30px;
+    background: white;
+}
+
+.login-form__logo {
+    display: block;
+    max-width: 125px;
+    margin: 0 auto;
+}
+
+.login-form__content {
+    padding: 30px;
+    background: rgb(255, 176, 209);
+}
+
+.login-form__header {
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 10px;
+    color:rgb(47, 73, 43);
+}
+
+.login-form__input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(221, 118, 178);
+    background: rgb(255, 255, 255);
+    outline: none;
+    transition: border-color 0.5s;
+}
+
+.login-form__input:focus{
+    border-color: #000;
+}
+
+.login-form__input::placeholder {
+    color: #000;
+}
+
+.login-form__button{
+    padding: 10px;
+    color:#000;
+    font-weight: bold;
+    background:rgb(156, 248, 255);
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form__em {
+    padding: 10px;
+    color:#000;
+    font-weight: bold;
+    width: 100%;
+    margin: 0 auto;
+}
